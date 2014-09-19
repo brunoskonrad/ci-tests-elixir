@@ -48,8 +48,8 @@ export PATH="$ERLANG_PATH/bin:$ELIXIR_PATH/bin:$PATH"
 
 # Install package tools
 if [ ! -e $HOME/.mix/rebar ]; then
-  echo "Y" | LC_ALL=en_GB.UTF-8 mix local.hex
-  echo "Y" | LC_ALL=en_GB.UTF-8 mix local.rebar
+  yes Y | LC_ALL=en_GB.UTF-8 mix local.hex
+  yes Y | LC_ALL=en_GB.UTF-8 mix local.rebar
 fi
 
 # Fetch and compile dependencies and application code (and include testing tools)
