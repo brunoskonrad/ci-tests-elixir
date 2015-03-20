@@ -3,7 +3,12 @@
 set -e
 
 export ERLANG_VERSION="17.1"
-export ELIXIR_VERSION="v1.0"
+export ELIXIR_VERSION="v1.0.2"
+
+# If you have a elixir_buildpack.config, do this instead:
+#export ERLANG_VERSION=$(cat elixir_buildpack.config | grep erlang_version | tr "=" " " | awk '{ print $2 }')
+#export ELIXIR_VERSION=v$(cat elixir_buildpack.config | grep elixir_version | tr "=" " " | awk '{ print $2 }')
+
 export INSTALL_PATH="$HOME/dependencies"
 
 export ERLANG_PATH="$INSTALL_PATH/otp_src_$ERLANG_VERSION"
