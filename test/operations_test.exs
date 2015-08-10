@@ -42,7 +42,7 @@ defmodule OperationsSpec do
     context "when divide by zero" do
       it "throws an error" do
         assert_raise ArgumentError, "can't divide by zero", fn ->
-          raise ArgumentError, message: "can't divide by zero"
+          Operations.div(5, 0)
         end
       end
     end
