@@ -7,9 +7,9 @@ defmodule Operations do
     a - b
   end
 
-  def mult(a, b), do: a * b
-  def mult(0, b), do: 0
-  def mult(a, 0), do: 0
+  def mult(a, b) do
+    a * b
+  end
 
   def div(0, b), do: 0
   def div(a, 0) do
