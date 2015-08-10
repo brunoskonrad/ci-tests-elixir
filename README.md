@@ -9,3 +9,8 @@ Use [Pavlov](https://github.com/sproutapp/pavlov) for BDD test
 
 * Install dependencies: `mix deps.get`
 * Run the tests: `mix test`
+
+## CI services building this repo
+
+- [CircleCI](https://circleci.com/gh/paulodiovani/ci-tests-elixir)
+- [Travis CI](https://travis-ci.org/brunoskonrad/ci-tests-elixir)
