@@ -7,27 +7,14 @@ defmodule Operations do
     a - b
   end
 
-  def mult(a, b) do
-    a * b
-  end
+  def mult(a, b), do: a * b
+  def mult(0, b), do: 0
+  def mult(a, 0), do: 0
 
-  def mult(0, b) do
-    0
-  end
-
-  def mult(a, 0) do
-    0
-  end
-
-  def div(0, b) do
-    0
-  end
-
+  def div(0, b), do: 0
   def div(a, 0) do
     raise ArgumentError, message: "can't divide by zero"
   end
+  def div(a, b), do: a / b
 
-  def div(a, b) do
-    a / b
-  end
 end
